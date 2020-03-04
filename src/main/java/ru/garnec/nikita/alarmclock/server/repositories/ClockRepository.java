@@ -1,10 +1,9 @@
-package ru.sergei.komarov.chatbot.server.repositories;
+package ru.garnec.nikita.alarmclock.server.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
-import ru.sergei.komarov.chatbot.server.models.Clock;
+import ru.garnec.nikita.alarmclock.server.models.Clock;
 
-import java.time.LocalTime;
 import java.util.List;
 
 @Component

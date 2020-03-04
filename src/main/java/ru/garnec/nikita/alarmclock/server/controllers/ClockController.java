@@ -1,19 +1,15 @@
-package ru.sergei.komarov.chatbot.server.controllers;
+package ru.garnec.nikita.alarmclock.server.controllers;
 
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.sergei.komarov.chatbot.server.models.Clock;
-import ru.sergei.komarov.chatbot.server.services.ClockService;
-import ru.sergei.komarov.chatbot.server.utils.GsonConverter;
+import ru.garnec.nikita.alarmclock.server.services.ClockService;
+import ru.garnec.nikita.alarmclock.server.models.Clock;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RestController

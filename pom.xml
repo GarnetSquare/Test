@@ -75,7 +75,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>ru.sergei.komarov.chatbot.server.AlarmClockServerApplication</mainClass>
+                    <mainClass>ru.garnec.nikita.alarmclock.server.AlarmClockServerApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

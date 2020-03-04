@@ -1,4 +1,4 @@
-package ru.sergei.komarov.chatbot.server.utils;
+package ru.garnec.nikita.alarmclock.server.utils;
 
 import java.util.Base64;
 

@@ -1,4 +1,4 @@
-package ru.sergei.komarov.chatbot.server;
+package ru.garnec.nikita.alarmclock.server;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

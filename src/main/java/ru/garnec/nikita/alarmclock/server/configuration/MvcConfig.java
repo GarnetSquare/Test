@@ -1,4 +1,4 @@
-package ru.sergei.komarov.chatbot.server.configuration;
+package ru.garnec.nikita.alarmclock.server.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;

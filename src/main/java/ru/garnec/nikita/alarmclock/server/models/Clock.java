@@ -1,4 +1,4 @@
-package ru.sergei.komarov.chatbot.server.models;
+package ru.garnec.nikita.alarmclock.server.models;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

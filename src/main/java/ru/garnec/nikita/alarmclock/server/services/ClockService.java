@@ -1,9 +1,9 @@
-package ru.sergei.komarov.chatbot.server.services;
+package ru.garnec.nikita.alarmclock.server.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.sergei.komarov.chatbot.server.models.Clock;
-import ru.sergei.komarov.chatbot.server.repositories.ClockRepository;
+import ru.garnec.nikita.alarmclock.server.repositories.ClockRepository;
+import ru.garnec.nikita.alarmclock.server.models.Clock;
 
 import java.util.List;
 

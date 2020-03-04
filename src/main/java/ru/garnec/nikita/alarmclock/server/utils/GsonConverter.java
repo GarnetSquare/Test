@@ -1,4 +1,4 @@
-package ru.sergei.komarov.chatbot.server.utils;
+package ru.garnec.nikita.alarmclock.server.utils;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
