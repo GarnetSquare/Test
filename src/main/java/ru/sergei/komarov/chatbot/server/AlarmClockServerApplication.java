@@ -7,10 +7,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class ChatBotServerApplication {
+public class AlarmClockServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ChatBotServerApplication.class, args);
+        SpringApplication.run(AlarmClockServerApplication.class, args);
     }
 
     @Bean
@@ -19,7 +19,7 @@ public class ChatBotServerApplication {
 
             System.out.println("=======================================");
 
-            System.out.println("CHATBOT SERVER SUCCESSFULLY STARTED.");
+            System.out.println("ALARM CLOCK SERVER SUCCESSFULLY STARTED.");
             System.out.println("Host: http://localhost:8080");
 
             System.out.println("=======================================");

@@ -2,22 +2,19 @@ package ru.sergei.komarov.chatbot.server.models;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Objects;
 
 @Entity
-@Table(name = "messages")
-public class Message {
+@Table(name = "clocks")
+public class Clock {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "message_id_seq")
+    @SequenceGenerator(name = "clock_id_seq")
     private int id;
-    private String message;
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "userId")
-    private User user;
-    private LocalDateTime date;
+    private LocalTime time;
 
-    public Message() {
+    public Clock() {
     }
 
     public int getId() {
@@ -28,45 +25,28 @@ public class Message {
         this.id = id;
     }
 
-    public String getMessage() {
-        return message;
+    public LocalTime getTime() {
+        return time;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setTime(LocalTime time) {
+        this.time = time;
     }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
-
-    @Override
+    /*    @Override
     public String toString() {
-        return "Message{" +
+        return "Clock{" +
                 "id=" + id +
                 ", message='" + message + '\'' +
                 ", user=" + user +
                 ", date=" + date +
                 '}';
-    }
+    }*/
 
-    @Override
+/*    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Message message1 = (Message) o;
+        Clock message1 = (Clock) o;
         return id == message1.id &&
                 Objects.equals(message, message1.message) &&
                 Objects.equals(user, message1.user) &&
@@ -76,5 +56,5 @@ public class Message {
     @Override
     public int hashCode() {
         return Objects.hash(id, message, user, date);
-    }
+    }*/
 }
